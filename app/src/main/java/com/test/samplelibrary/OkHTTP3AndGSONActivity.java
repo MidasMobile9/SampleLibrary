@@ -412,7 +412,7 @@ public class OkHTTP3AndGSONActivity extends AppCompatActivity {
                 .build();
 
         try {
-            response = OkHttpAPICall.PUT(client, NetworkDefineConstant.SERVER_URL_DELETE_DATA, requestBody);
+            response = OkHttpAPICall.DELETE(client, NetworkDefineConstant.SERVER_URL_DELETE_DATA, requestBody);
 
             if ( response == null ) {
                 Log.e(TAG, "Response of deleteName() is null.");
